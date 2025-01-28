@@ -48,15 +48,4 @@ function validateAndRedirect() {
         alert('Por favor, completa todos los campos.');
         return;
     }
-
-    // Nueva expresión regular para mayor flexibilidad
-    const passwordPattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^A-Za-z0-9])[A-Za-z\d\S]{8,}$/;
-
-    if (!passwordPattern.test(password)) {
-        alert('La contraseña debe tener al menos:\n- Una letra mayúscula\n- Una letra minúscula\n- Un número\n- Un carácter especial\n- Mínimo 8 caracteres.');
-        return;
-    }
-
-    alert('Inicio de sesión exitoso.');
-    window.location.href = '../Administrador/index.html';
 }

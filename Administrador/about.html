@@ -140,7 +140,6 @@ document.getElementById('edit-values').addEventListener('click', function() {
     document.getElementById('edit-values').style.display = 'none';
     document.getElementById('save-values').style.display = 'inline-block';
 });
-
 document.getElementById('save-values').addEventListener('click', function() {
     const valuesList = document.getElementById('contentEditable');
     const items = valuesList.querySelectorAll('li');
@@ -148,7 +147,6 @@ document.getElementById('save-values').addEventListener('click', function() {
     document.getElementById('edit-values').style.display = 'inline-block';
     document.getElementById('save-values').style.display = 'none';
 });
-
 // Editar y guardar "Sobre Nosotros"
 document.getElementById('edit-about').addEventListener('click', function () {
     const aboutText = document.getElementById('about-text');
@@ -157,7 +155,6 @@ document.getElementById('edit-about').addEventListener('click', function () {
     document.getElementById('edit-about').style.display = 'none';
     document.getElementById('save-about').style.display = 'inline-block';
 });
-
 document.getElementById('save-about').addEventListener('click', function () {
     const aboutText = document.getElementById('about-text');
     aboutText.contentEditable = false;
